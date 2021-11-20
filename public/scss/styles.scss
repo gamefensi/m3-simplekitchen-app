@@ -21,10 +21,20 @@ body{
   background: $backgroundColor1;
 }
 
+h4.form-registration {
+  text-align: center;
+  font-weight: bold;
+}
+
 header {
     height: 50px;
     width: 1350px;
     margin: 0.8em auto 1em auto;
+    display: relative;
+    a {
+      display: absolute;
+      color: white;
+    }
 }
 
 main {
@@ -36,16 +46,17 @@ main {
 
     #intro-image {
       float: left;
-      width: 800px;
-
+      width: 645px;
+      height: 465px;
       img {
-        width: 800px;
+        width: 645px;
+        height: 465px;
       }
     }
 
     #intro-text {
-      width: 550px;
-      height: 407px;
+      width: 645px;
+      height: 465px;
       float:left;
       background: $sectionColor;
       text-align: center;
@@ -61,6 +72,14 @@ main {
         font-size: 2em;
       }
     }
+    #thank-you {
+      h3 {
+        font-size: $fontSizeH3;
+        color: $color3;
+        text-align: center;
+        font-weight: bold;
+      }
+    }
 }
 
 footer {
@@ -73,7 +92,7 @@ footer {
 // @extend 
 button {
   color: $color4;
-  width: 100px;
+  width: 120px;
   height: 40px;
   background: $backgroundColor1;
   margin-top: 2em;
@@ -81,4 +100,5 @@ button {
 .submit-buttton {
   @extend button;
   border: 1px $color3;
+  padding: 1px 0 2px 0;
 }

@@ -4,7 +4,7 @@ if errors
     ul.my-errors
         for error in errors
             li= error.msg
-h1.form-registration Register to subscribe
+h4.form-registration Register to subscribe
 form(action="." method="POST" class="form-registration")
     label(for="name") Name:
     input(
@@ -27,5 +27,5 @@ form(action="." method="POST" class="form-registration")
     input(
         type="submit" 
         value="Register"
-        class="btn btn-lg btn-primary btn-block"
+        class="btn btn-lg btn-block submit-buttton"
     )

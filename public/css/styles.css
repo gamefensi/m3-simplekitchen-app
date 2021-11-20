@@ -2,7 +2,7 @@
 /* SCSS */
 nav {
   font-size: 1em;
-  font-font-weight: bold;
+  font-weight: bold;
   float: left; }
   nav ul {
     list-style-type: none; }
@@ -23,12 +23,20 @@ html {
 
 body {
   font-family: Arial, Helvetica, Sans-Serif;
-  background: #daaa0e; }
+  background: #daaa0e !important; }
+
+h4.form-registration {
+  text-align: center;
+  font-weight: bold; }
 
 header {
   height: 50px;
   width: 1350px;
-  margin: 0.8em auto 1em auto; }
+  margin: 0.8em auto 1em auto;
+  display: relative; }
+  header a {
+    display: absolute;
+    color: white; }
 
 main {
   background: white;
@@ -38,12 +46,14 @@ main {
   margin: 0 auto; }
   main #intro-image {
     float: left;
-    width: 800px; }
+    width: 645px;
+    height: 465px; }
     main #intro-image img {
-      width: 800px; }
+      width: 645px;
+      height: 465px; }
   main #intro-text {
-    width: 550px;
-    height: 407px;
+    width: 645px;
+    height: 465px;
     float: left;
     background: #d4d5d8;
     text-align: center;
@@ -54,6 +64,11 @@ main {
     main #intro-text span {
       font-family: "Sacramento", cursive;
       font-size: 2em; }
+  main #thank-you h3 {
+    font-size: 2em;
+    color: #313130;
+    text-align: center;
+    font-weight: bold; }
 
 footer {
   width: 1350px;
@@ -63,10 +78,11 @@ footer {
 
 button, .submit-buttton {
   color: white;
-  width: 100px;
+  width: 120px;
   height: 40px;
-  background: #daaa0e;
+  background: #daaa0e !important;
   margin-top: 2em; }
 
 .submit-buttton {
-  border: 1px #313130; }
+  border: 1px #313130;
+  padding: 1px 0 2px 0; }
